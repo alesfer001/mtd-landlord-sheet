@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free MTD Quarterly Sheet for UK Landlords</title>
+<meta name="description" content="A free Excel sheet for one rental property: record income and expenses in the MTD quarterly update categories and get each quarter's totals in fixed cells your bridging software can link to.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <p class="eyebrow">Free Excel template · UK property income</p>
+  <h1>A free quarterly MTD sheet for landlords</h1>
+  <p class="lede">Record your rent and expenses for one property. The sheet sorts them into the categories a Making Tax Digital quarterly update asks for and gives you the totals in fixed cells that your bridging software links to.</p>
+  <p>
+    <a class="button" href="https://github.com/alesfer001/mtd-landlord-sheet/releases/download/sheet-v1.1/mtd-landlord-quarterly-sheet-starter.xlsx"data-goatcounter-click="download-starter" data-goatcounter-title="Starter sheet download">Download the free sheet (.xlsx)</a>
+  </p>
+  <p class="small">No email needed. Works in Excel, LibreOffice and Google Sheets.</p>
+</header>
+
+<section>
+  <h2>What's in it</h2>
+  <ul class="ticks">
+    <li><strong>One row per receipt or payment.</strong> Date, description, category, amount. The quarter fills itself in.</li>
+    <li><strong>The 12 UK property categories</strong> from HMRC's quarterly update rules (4 income, 7 expense, residential finance costs), each mapped to its SA105 box.</li>
+    <li><strong>Quarterly and year-to-date totals</strong> for the 7 August, 7 November, 7 February and 7 May updates. Updates are cumulative from the start of the tax year, so both are shown. Standard (6 April) or calendar (1 April) update periods.</li>
+    <li><strong>A fixed totals tab for bridging software</strong> to link to, or to save as CSV and import.</li>
+    <li><strong>Checks</strong> that flag rows with no date, no category, or a date outside the tax year.</li>
+    <li><strong>A note on each category</strong> saying what usually goes in it.</li>
+  </ul>
+  <p class="small">A spreadsheet can't submit to HMRC on its own. Bridging software reads the totals from the sheet (it links to the cells, or you import the file) and sends the update. Don't retype or copy-paste the figures: MTD requires a digital link between your records and the software that submits them.</p>
+</section>
+
+<section class="card" id="full">
+  <h2>The full version: £39, not built yet</h2>
+  <p>If enough landlords want it, I'll build a full version for January 2027, ahead of the April 2027 start for landlords over £30,000.</p>
+  <table>
+    <thead>
+      <tr><th></th><th>Free starter</th><th>Full (£39)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Properties</td><td>1</td><td>Several, one tab each</td></tr>
+      <tr><td>Quarterly update categories and totals</td><td>Yes</td><td>Yes</td></tr>
+      <tr><td>Joint ownership split</td><td>—</td><td>Yes</td></tr>
+      <tr><td>Section 24 finance cost credit</td><td>—</td><td>Yes</td></tr>
+      <tr><td>Year-end adjustments tab</td><td>—</td><td>Yes</td></tr>
+      <tr><td>Setup guide for named bridging tools</td><td>—</td><td>Yes</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Join the waitlist</h3>
+  <p>One email when it's ready, with the launch price. Nothing else.</p>
+  <form id="waitlist" action="https://mtdlandlord.lemonsqueezy.com/email-subscribe/external" method="post">
+    <label for="email">Email</label>
+    <div class="row">
+      <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      <button type="submit">Join the waitlist</button>
+    </div>
+    <label class="check">
+      <input type="checkbox" name="consent" required>
+      <span>Email me when the full version is out. I can unsubscribe at any time.</span>
+    </label>
+    <p class="small">Your email is kept by Lemon Squeezy for this one purpose. See the <a href="privacy.html">privacy notice</a>.</p>
+  </form>
+</section>
+
+<section>
+  <h2>Who made this</h2>
+  <p>I'm Ayoub, a software developer. I built this sheet because landlords moving onto MTD need somewhere to keep their figures in the right categories, and most options are monthly subscriptions. I'm not an accountant.</p>
+  <p>Feedback is welcome: what's missing, what's confusing, what your bridging software asks for. Email <a href="mailto:lesferayoub@gmail.com">lesferayoub@gmail.com</a>. I can't advise on your own figures.</p>
+</section>
+
+<section class="disclaimer">
+  <h2>Not tax advice</h2>
+  <p>This is a record-keeping template, not tax advice. You are responsible for the accuracy of every figure you enter and submit. This template is not approved or endorsed by HMRC. It organises your figures into SA105 categories for use with MTD bridging software. If you are unsure how to treat an item, check HMRC's guidance or ask a qualified accountant before submitting.</p>
+</section>
+
+</main>
+
+<footer>
+  <a href="privacy.html">Privacy</a> · No cookies on this site
+</footer>
+
+<script>
+  // Count waitlist submissions alongside downloads; Lemon Squeezy holds the real list.
+  document.getElementById("waitlist").addEventListener("submit", function () {
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: "waitlist-submit", title: "Waitlist submit", event: true });
+    }
+  });
+</script>
+<script data-goatcounter="https://mtd-landlord.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
